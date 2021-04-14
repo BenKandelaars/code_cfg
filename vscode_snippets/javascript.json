@@ -1,0 +1,35 @@
+{
+	"Console Log": {
+		"prefix": "c#",
+		"body": "console.log('$2', $1); \/\/ eslint-disable-line",
+		"description": "Console.log with comments for eslint"
+	},
+	"Testing - describe statements": {
+		"prefix": "d#",
+		"body": [
+			"describe('$1', () => {",
+			"  $2",
+			"});"
+		],
+		"description": "It statement for pending tests"
+	},
+	"Testing - it statements": {
+		"prefix": "i#",
+		"body": "it('$1');",
+		"description": "It statement for pending tests"
+	},
+	"Arrow functions": {
+		"prefix": "9#",
+		"body": [
+			"() => {",
+			"  $2",
+			"}"],
+		"description": "Arrow function scaffold"
+	},
+	"Debugger": {
+		"prefix": "debug#",
+		"body": [
+			"debugger; // eslint-disable-line"
+		]
+	}
+}

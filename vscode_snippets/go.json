@@ -1,0 +1,41 @@
+{
+	"Go function signature": {
+		"prefix": "func (",
+		"body": [
+			"func ($1) $2{",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert a go function",
+	},
+	"Go method":{
+		"prefix": "func_method",
+		"body": ["func ($1) ($2) $3{",
+			"\t$0",
+			"}"
+		],
+		"description": "Insert start of a go function"
+	},
+	"Go testing function":{
+		"prefix": "func Test",
+		"body": [
+			"func Test$1(t *testing.T) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Go testing function signature"
+	},
+	"Go assertion function":{
+		"prefix": "func assert",
+		"body": [
+			"func assert$1(t testing.TB,${4:args} ${2:want} ${3:string}) {",
+			"\tt.Helper()",
+			"\t$0",
+			"\tif got != $2 {",
+			"\t\tt.Errorf(\"got %q want %q\", got, want)",
+			"\t}",
+			"}"
+		],
+		"description": "Go testing function signature"
+	}
+}

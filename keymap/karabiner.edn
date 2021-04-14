@@ -1,0 +1,10 @@
+{:main
+	[
+		{:des "single_to_double_quotes" :rules [[:quote :!S2]]}
+		{:des "double_to_single_quotes" :rules [[:!S2 :quote]]}
+		{:des "caps_lock right navigation" :rules [[:caps_lock :right_arrow]]}
+		{:des "golang right shift color variation assignment" :rules [[:!Rsemicolon [:!Ssemicolon :equal_sign]]]}
+	]
+}
+
+;; TODO: use shift escape to navigate to the terminal and execute the last command
